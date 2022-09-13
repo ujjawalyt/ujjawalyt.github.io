@@ -44,6 +44,8 @@ body.active {
     -0.4rem -0.4rem 1rem #333 inset;
 }
 
+
+
 section {
   min-height: 100vh;
   padding: 2rem;
@@ -152,4 +154,149 @@ section {
 #menu-btn:hover {
   color: var(--green);
   box-shadow: var(--box-shadow-inset);
+}
+#theme-toggler {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1000;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  color: var(--black);
+  background: var(--bg-color);
+}
+
+#theme-toggler:hover {
+  color: var(--green);
+  box-shadow: var(--box-shadow-inset);
+}
+
+ /* home section starts   */
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+
+.home h3 {
+  font-size: 2.5rem;
+  color: rgb(27, 21, 21);
+}
+
+.home h1 {
+  font-size: 5rem;
+  color: rgb(25, 23, 23);
+}
+
+.home h1 span {
+  color: var(--yellow);
+}
+
+.home p {
+  font-size: 2rem;
+  color: rgb(26, 23, 23);
+  padding: 1rem 0;
+}
+ /* home section end  */
+
+/* about section start  */
+ .about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.about .row .info {
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+
+.about .row .info h3 {
+  font-size: 2rem;
+  color: var(--yellow);
+  
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.about .row .info h3 span {
+  color: rgb(29, 26, 26);
+  padding: 0 0.5rem;
+}
+
+.about .row .counter {
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .row .counter .box {
+  width: 20rem;
+  background :white;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.about .row .counter .box span {
+  font-size: 4rem;
+  /* color: var(--yellow); */
+}
+
+.about .row .counter .box h3 {
+  font-size: 2rem;
+  color: rgb(31, 28, 28);
+}
+/* about section end  */
+
+
+
+
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding-left: 0;
+  }
+
+  .header {
+    left: -110%;
+  }
+
+  .header.active {
+    left: 0%;
+    transition: 0.4s linear;
+  }
+
+  #menu-btn {
+    display: initial;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    width: 100%;
+    border-right: 0;
+  }
 }
