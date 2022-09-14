@@ -244,10 +244,29 @@ section {
 
 .about .row .counter .box {
   width: 20rem;
-  background :white;
+  /* background :white; */
   text-align: center;
   padding: 2rem;
   margin: 2rem;
+
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  border: 1rem solid transparent;
+  margin: 10px 10px;
+  padding: 10px 0;
+  border-radius: 4px;
+  justify-content: space-around;
+}
+
+.about .row .counter .box:hover {
+  transform: scale(1.04);
+  color: #27ae60;
 }
 
 .about .row .counter .box span {
@@ -260,32 +279,6 @@ section {
   color: rgb(31, 28, 28);
 }
 /* about section end  */
-
-.education .box-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  padding-left: 3rem;
-}
-
-.education .box-container .box {
-  width: 27rem;
-  margin: 4rem 1rem;
-  padding-left: 4rem;
-  /* border-left: 0.2rem solid #fff; */
-  position: relative;
-}
-
-.education .box-container .box> img{
-  width: 100%;
-  
-}
-
-
-
-/* skill section end */
 
 
 /* contact section start */
@@ -330,7 +323,7 @@ section {
 
 .contact .row .content .title {
   text-transform: uppercase;
-  /* color: #fff; */
+  color: #fff;
   color: #111;
   font-size: 3rem;
   padding-bottom: 2rem;
@@ -340,7 +333,7 @@ section {
   display: flex;
   align-items: center;
   font-size: 2rem;
-  /* color: #eee; */
+  color: #eee;
   color: #111;
   padding: 1rem 0;
   font-weight: normal;
@@ -349,6 +342,9 @@ section {
 .contact .row .content .info h3 i {
   padding-right: 1rem;
   color: var(--yellow);
+}
+.contact .row .content .info h3 a{
+  color: #27ae60;
 }
 
 /* contact section end */
@@ -386,5 +382,63 @@ section {
   .header {
     width: 100%;
     border-right: 0;
+  }
+}
+
+.skills_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 5rem 0;
+  margin: 0 30px;
+}
+.skills_card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  border: 1rem solid transparent;
+  margin: 10px 10px;
+  padding: 10px 0;
+  border-radius: 4px;
+  justify-content: space-around;
+}
+
+.skills_card:hover {
+  transform: scale(1.04);
+  color: #27ae60;
+}
+
+.image_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.image_div > img {
+  width: 24%;
+  height: 89%;
+}
+
+.skills_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: none !important;
+  display: -webkit-box !important;
+}
+
+.skills_text > #skill_title {
+  font-size: 17px !important;
+}
+
+@media (max-width: 600px) {
+  #skill_title {
+    font-size: 13px !important;
   }
 }
