@@ -44,8 +44,6 @@ body.active {
     -0.4rem -0.4rem 1rem #333 inset;
 }
 
-
-
 section {
   min-height: 100vh;
   padding: 2rem;
@@ -177,7 +175,7 @@ section {
   box-shadow: var(--box-shadow-inset);
 }
 
- /* home section starts   */
+/* home section starts   */
 
 .home {
   display: flex;
@@ -205,10 +203,10 @@ section {
   color: rgb(26, 23, 23);
   padding: 1rem 0;
 }
- /* home section end  */
+/* home section end  */
 
 /* about section start  */
- .about .row {
+.about .row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +223,7 @@ section {
 .about .row .info h3 {
   font-size: 2rem;
   color: var(--yellow);
-  
+
   padding: 1rem 0;
   font-weight: normal;
 }
@@ -279,7 +277,6 @@ section {
   color: rgb(31, 28, 28);
 }
 /* about section end  */
-
 
 /* contact section start */
 .contact .row {
@@ -343,7 +340,7 @@ section {
   padding-right: 1rem;
   color: var(--yellow);
 }
-.contact .row .content .info h3 a{
+.contact .row .content .info h3 a {
   color: #27ae60;
 }
 
@@ -441,4 +438,83 @@ section {
   #skill_title {
     font-size: 13px !important;
   }
+}
+
+/* project */
+.portfolio .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+  grid-gap: 2rem;
+  gap: 4rem;
+  padding: 0 4rem;
+}
+
+.portfolio .box-container .box {
+  height: 30rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  border: 1rem solid transparent;
+}
+
+.portfolio .box-container .box img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio .box-container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20rem;
+  width: 100%;
+  background: var(--bg-color);
+  display: grid;
+  place-items: center;
+  transform: scale(0);
+}
+
+.portfolio .box-container .box:hover .content {
+  transform: scale(1);
+}
+
+.portfolio .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  text-transform: uppercase;
+  transform: translateY(-5rem);
+  opacity: 0;
+  transition-delay: 0.3s;
+  color: #27ae60;
+}
+
+.portfolio .box-container .box:hover .content h3 {
+  transform: translateY(0rem);
+  opacity: 1;
+}
+
+.icons-git {
+  cursor: pointer !important;
+  height: 40px;
+  width: 40px;
+}
+
+.icons-git img {
+  color: green !important;
+}
+
+.newDiv {
+  height: 10rem;
+  width: 100%;
+}
+
+.newDiv > h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black);
+  text-transform: uppercase;
+  padding: 1rem 1rem;
 }
