@@ -32,10 +32,6 @@ html {
 body {
   background: var(--bg-color);
   padding-left: 30rem;
-
-
-
- 
 }
 
 body.active {
@@ -49,14 +45,9 @@ body.active {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2rem;
 }
-
-
-
-
-
 
 .btn {
   margin-top: 1rem;
@@ -239,7 +230,7 @@ section {
   align-items: center;
   flex-wrap: wrap-reverse;
   gap: 2rem;
-  width: 80%;
+  width: 95%;
   justify-content: center;
 }
 
@@ -295,7 +286,7 @@ section {
   padding-top: 2rem;
 }
 
-.about .row .progress {
+/* .about .row .progress {
   flex: 1 1 40rem;
 }
 
@@ -345,7 +336,7 @@ section {
 
 .about .row .progress .bar-2-3 span {
   width: 95%;
-}
+} */
 /* about section end  */
 
 /* contact section start */
@@ -477,8 +468,8 @@ section {
 
 .skills_card:hover {
   transform: scale(1.04);
- /* color: #27ae60;  */
- color: #ccc;
+  /* color: #27ae60;  */
+  color: #ccc;
 }
 
 .image_div {
@@ -589,8 +580,3 @@ section {
   text-transform: uppercase;
   padding: 1rem 1rem;
 }
-
-
-
-
-
