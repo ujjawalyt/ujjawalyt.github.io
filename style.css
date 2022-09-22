@@ -513,7 +513,7 @@ section {
 }
 
 .portfolio .box-container .box {
-  height: 30rem;
+  height: 61rem;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: var(--box-shadow);
@@ -522,7 +522,7 @@ section {
 }
 
 .portfolio .box-container .box img {
-  height: 20rem;
+  height: 30rem;
   width: 100%;
   object-fit: cover;
 }
@@ -531,7 +531,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20rem;
+  height: 30rem;
   width: 100%;
   background: var(--bg-color);
   display: grid;
