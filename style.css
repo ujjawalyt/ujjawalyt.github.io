@@ -417,8 +417,7 @@ section {
 
 .contact .row .content .title {
   text-transform: uppercase;
-  color: #fff;
-  color: #111;
+  color: var(--black);
   font-size: 3rem;
   padding-bottom: 2rem;
 }
@@ -427,8 +426,7 @@ section {
   display: flex;
   align-items: center;
   font-size: 2rem;
-  color: #eee;
-  color: #111;
+  color: var(--black);
   padding: 1rem 0;
   font-weight: normal;
 
@@ -438,8 +436,12 @@ section {
   padding-right: 1rem;
   color: var(--yellow);
 }
+.contact .row .content .info h3 a:hover {
+  color: var(--green);
+}
 .contact .row .content .info h3 a {
-  color: #27ae60;
+  text-decoration: none;
+  color: var(--black);
 }
 
 /* contact section end */
@@ -637,4 +639,18 @@ section {
   font-weight: 600;
   margin-top: 4%;
   color:black;
+}
+
+.bottom_credit{
+  font-size: 2rem;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 1rem;
+  border-top: var(--border);
+  color: var(--black);
+}
+
+.bottom_credit > a{
+  text-decoration: none;
+  color: var(--green);
 }
