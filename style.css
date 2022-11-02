@@ -322,58 +322,7 @@ section {
   padding-top: 2rem;
 }
 
-/* .about .row .progress {
-  flex: 1 1 40rem;
-}
 
-.about .row .progress h3 {
-  color: var(--black);
-  font-weight: normal;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about .row .progress .bar {
-  box-shadow: var(--box-shadow);
-  border-radius: 5rem;
-  height: 2rem;
-  padding: 0.5rem;
-  margin: 1rem 0;
-}
-
-.about .row .progress .bar span {
-  display: block;
-  height: 100%;
-  background: var(--green);
-  border-radius: 5rem;
-}
-
-.about .row .progress .bar-1-1 span {
-  width: 90%;
-}
-
-.about .row .progress .bar-1-2 span {
-  width: 65%;
-}
-
-.about .row .progress .bar-1-3 span {
-  width: 95%;
-}
-
-.about .row .progress .bar-2-1 span {
-  width: 95%;
-}
-
-.about .row .progress .bar-2-2 span {
-  width: 80%;
-}
-
-.about .row .progress .bar-2-3 span {
-  width: 95%;
-} */
-/* about section end  */
 
 /* contact section start */
 .contact .row {
