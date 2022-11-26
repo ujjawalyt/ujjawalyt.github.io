@@ -96,8 +96,8 @@ section {
   margin: 1rem 0;
   border: 1rem solid transparent;
   border-radius: 50%;
-  height: 18rem;
-  width: 18rem;
+  height: 19rem;
+  width: 19rem;
   box-shadow: var(--box-shadow);
   object-fit: cover;
 }
@@ -512,7 +512,7 @@ section {
 .portfolio .box-container .box img {
   height: 30rem;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .portfolio .box-container .box .content {
