@@ -512,7 +512,7 @@ section {
 .portfolio .box-container .box img {
   height: 30rem;
   width: 100%;
-  /* object-fit: cover; */
+  object-fit: cover; 
 }
 
 .portfolio .box-container .box .content {
@@ -562,7 +562,7 @@ section {
 }
 
 .newDiv > h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--black);
   text-transform: uppercase;
