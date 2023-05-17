@@ -18,9 +18,10 @@
 
     <header class="header">
       <div class="user">
-        <img src="files/ujjawal_image1.jpeg" alt="" />
+        <img src="files/Ujjawal-Prakash.jpg" alt="" />
         <h3>Ujjawal Prakash</h3>
         <p>java backend developer</p>
+
       </div>
 
       <nav class="navbar">
@@ -51,7 +52,8 @@
             
           </h3> 
           <br>                   
-            <p>i am a java backend developer</p>
+            <!-- <p>i am a java backend developer</p> -->
+            <p>I'am <span class="input"></span></p>
             <a
                 href="files/Ujjawal Prakash Resume (4).pdf"
                 download
@@ -162,11 +164,49 @@
               <span id="skill_title" className="heading "> CSS </span>
             </h1>
           </div>
+
+          <div class="skills_card">
+            <div class="image_div">
+              <img src="files/mongoo.webp" alt="" />
+            </div>
+            <h1 class="skills_text">
+              <span id="skill_title" className="heading ">MongoDB </span>
+            </h1>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- skills section ends -->
+
+<!-- tools -->
+    
+<section class="skills" id="skills">
+  <h1 class="heading">my <span>tools</span> skills</span></h1>
+
+  <div class="box-container">
+    <div class="skills_div">
+      <div class="skills_card">
+        <div class="image_div">
+          <img src="files/vs.png" alt="" />
+        </div>
+        <h1 class="skills_text">
+          <span id="skill_title" className="heading "> Vscode</span>
+        </h1>
+      </div>
+
+      <div class="skills_card">
+        <div class="image_div">
+          <img src="files/postman.png" alt="" />
+        </div>
+        <h1 class="skills_text">
+          <span id="skill_title" className="heading ">Postman</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  -->
 
  <!-- project section start -->
     <section class="portfolio" id="projects">
@@ -372,6 +412,55 @@ Users can see the latest news post, and
               </div>
           </div>
          
+          <div class="box">
+            <img src="files/blog app.PNG" alt="" />
+            <div class="content">
+                <h3>Blogging Application</h3>
+
+                <div
+                    style="
+                        display: flex;
+                        justify-content: space-around;
+                         width: 40%;
+                    "
+                >
+                    <a
+                        class="icons-git"
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://github.com/ujjawalyt/BloggingApplication"
+                    >
+                        <img
+                            style="height: 100%; width: 100%"
+                            src="files/github-brands.svg"
+                            alt=""
+                        />
+                    </a>
+                    <a
+                        class="icons-git"
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://github.com/ujjawalyt/BloggingApplication"
+                    >
+                        <img
+                            style="height: 100%; width: 100%"
+                            src="files/photo-video-solid-svgrepo-com.svg"
+                            alt=""
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="newDiv">
+                <h3>This is a RESTful web service for a blogging platform that provides secure CRUD operations with authentication and authorization using Spring Security. The API is built using Java and the Spring Framework.</h3>
+                <h3>TECH STACK:</h3>
+                <h3>Built with Java, MySQL,Hibernate, Spring-Boot and Maven,Spring-Security,jwt authentication</h3>
+                <h3>FEATURES : Users and Admin authentication & validation with jwt token having, Pagination ,Sorting ,Searching </h3>
+               <h3>
+                  </h3>
+
+            </div>
+        </div>
+
           </div>
      
   </section>
@@ -512,3 +601,18 @@ Users can see the latest news post, and
 
 
 <script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      var typed = new Typed(".input", {
+        strings: [
+          "Ujjawal Prakash",
+          "Backend Developer",
+          "Java Developer",
+          "Full Stack Developer",
+        ],
+        typeSpeed: 65,
+        backSpeed: 55,
+        loop: true,
+      });
+</script>
